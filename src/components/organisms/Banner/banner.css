@@ -1,0 +1,17 @@
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.banner-nav {
+  display: flex;
+  align-items: center;
+  justify-items: space-between;
+}
+
+.navlink {
+  margin-left: 5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}/*# sourceMappingURL=banner.css.map */
