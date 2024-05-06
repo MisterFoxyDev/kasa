@@ -6,6 +6,8 @@ import Footer from "./components/organisms/Footer/Footer";
 import Banner from "./components/organisms/Banner/Banner";
 import Home from "./components/pages/home/Home";
 import About from "./components/pages/about/About";
+import bodyAboutBanner from "./assets/images/body-about-banner.webp";
+import bodyHomeBanner from "./assets/images/body-home-banner.webp";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,8 +16,8 @@ root.render(
       <Router>
         <Banner />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home banner={bodyHomeBanner} />} />
+          <Route path="/about" element={<About banner={bodyAboutBanner} />} />
         </Routes>
       </Router>
     </div>
