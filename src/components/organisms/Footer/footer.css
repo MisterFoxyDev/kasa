@@ -1,0 +1,7 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13rem;
+  background: #000000;
+}/*# sourceMappingURL=footer.css.map */
