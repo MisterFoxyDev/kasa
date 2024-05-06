@@ -3,8 +3,8 @@ import "./footer.scss";
 
 const Footer = () => {
   return (
-    <div className="container">
-      <img className="footer" src={footerImage} alt="footer" />
+    <div className="footer-container">
+      <img className="footer-img" src={footerImage} alt="footer" />
     </div>
   );
 };

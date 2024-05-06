@@ -1,10 +1,10 @@
-import "./App.scss";
+import "./home.scss";
 import bodyHomeBanner from "../../../assets/images/body-home-banner.png";
-import Gallery from "../Gallery/Gallery";
+import Gallery from "../../organisms/Gallery/Gallery";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
+    <div className="home">
       <div className="body-home-banner">
         <img className="body-home-banner-img" src={bodyHomeBanner} alt="" />
         <h1 className="body-home-banner-text">
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

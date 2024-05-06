@@ -1,5 +1,7 @@
+import "./card.scss"
+
 const Card = () => {
-  return ( <div>
+  return ( <div className="card">
 
 </div>
 )};

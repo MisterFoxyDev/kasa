@@ -1,6 +1,12 @@
 .gallery {
-    background-color: #F6F6F6;
-    height: 100%;
-    margin-top: 3rem;
-    border-radius: 25px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5% 0;
 }

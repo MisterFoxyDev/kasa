@@ -1,7 +1,15 @@
-.footer {
+.footer-container {
+  margin-top: 25%;
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+}
+
+.footer-img {
+  position: relative;
+  object-fit: cover;
   height: 13rem;
+  width: 100vw;
   background: #000000;
+  margin: 0;
 }
