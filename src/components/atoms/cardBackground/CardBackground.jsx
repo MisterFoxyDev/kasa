@@ -1,8 +1,8 @@
 import "./cardBackground.scss"
 
-const CardBackground = () => {
-  return ( <div className="card-background">
-
+const CardBackground = ({ cover }) => {
+  return ( <div>
+<img className="card-background" src={cover} alt="" />
 </div>
 )};
 

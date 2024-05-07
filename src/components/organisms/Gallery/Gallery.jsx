@@ -1,15 +1,18 @@
 import Card from "../../molecules/Card";
 import "./gallery.scss";
+import logements from "../../../assets/logements/logements.json";
 
 const Gallery = () => {
   return (
     <div className="gallery">
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {logements.map((logement) => (
+        <Card
+          key={logement.id}
+          id={logement.id}
+          cover={logement.cover}
+          title={logement.title}
+        />
+      ))}
     </div>
   );
 };
