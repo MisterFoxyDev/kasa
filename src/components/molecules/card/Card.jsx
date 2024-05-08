@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import CardBackground from "../atoms/cardBackground/CardBackground";
+import CardBackground from "../../atoms/cardBackground/CardBackground";
 import "./card.scss";
-import CardTitle from "../atoms/cardTitle/CardTiltle";
+import CardTitle from "../../atoms/cardTitle/CardTiltle";
 
 const Card = ({ id, cover, title }) => {
   return (

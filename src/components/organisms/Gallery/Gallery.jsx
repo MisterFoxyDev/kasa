@@ -1,4 +1,4 @@
-import Card from "../../molecules/Card";
+import Card from "../../molecules/card/Card";
 import "./gallery.scss";
 import logements from "../../../assets/logements/logements.json";
 
