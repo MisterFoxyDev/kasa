@@ -3,7 +3,7 @@ import "./cardTitle.scss";
 const CardTitle = ({ title }) => {
   return (
     <div>
-      <p className="card-title">{title}</p>
+      <p className="card__title">{title}</p>
     </div>
   );
 };

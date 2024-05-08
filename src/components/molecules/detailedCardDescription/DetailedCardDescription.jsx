@@ -8,9 +8,9 @@ import "./detailedCardDescription.scss";
 const detailedCardDescription = ({ idLogement }) => {
   return (
     <div>
-      <section className="detailed-card-infos">
-        <DetailedCardInfo1 />
-        <DetailedCardInfo2 />
+      <section className="detailed-card__infos-container">
+        <DetailedCardInfo1 idLogement={idLogement} />
+        <DetailedCardInfo2 idLogement={idLogement} />
       </section>
       <section className="dropdown-menues">
         <DescriptionDropdownMenu idLogement={idLogement} />

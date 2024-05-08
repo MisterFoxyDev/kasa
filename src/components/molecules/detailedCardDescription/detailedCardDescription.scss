@@ -1,5 +1,6 @@
-.detailed-card-infos {
+.detailed-card__infos-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
 }

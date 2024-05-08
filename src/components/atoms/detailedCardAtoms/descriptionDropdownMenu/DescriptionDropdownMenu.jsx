@@ -1,8 +1,8 @@
 import "./descriptionDropdownMenu.scss";
 
-const DescriptionDropdownMenu = () => {
+const DescriptionDropdownMenu = ({ idLogement }) => {
   return (
-    <div className="dropdown-container">
+    <div className="description-dropdown__container">
       <p>Description</p>
     </div>
   );

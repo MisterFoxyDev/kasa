@@ -7,14 +7,3 @@
   position: relative;
 }
 
-.card-title {
-  box-sizing: border-box;
-  text-decoration: none;
-  margin-left: 1rem;
-  font-size: 1rem;
-  position: absolute; // Ajoutez cette ligne
-  bottom: 0; // Ajoutez cette ligne pour positionner le titre en bas de la carte
-  background-color: rgba(0, 0, 0, 0.5); // Ajoutez cette ligne pour rendre le fond du titre semi-transparent
-  color: white; // Ajoutez cette ligne pour rendre le texte du titre blanc
-  width: 90%; // Ajoutez cette ligne pour faire en sorte que le titre couvre toute la largeur de la carte
-}

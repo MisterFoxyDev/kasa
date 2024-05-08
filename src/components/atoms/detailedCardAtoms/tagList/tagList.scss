@@ -1,0 +1,16 @@
+.tag-list__container {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 50%;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+
+  .tag__container {
+    color: white;
+    padding: 5px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #ff6060;
+    border-radius: 5px;
+  }
+}
