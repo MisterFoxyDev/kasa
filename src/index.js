@@ -29,7 +29,10 @@ root.render(
             path="/about"
             element={<About banner={bodyAboutBanner} content={aboutContent} />}
           />
-          <Route path="/fiche-logement/:idLogement" element={FicheLogement} />
+          <Route
+            path="/fiche-logement/:idLogement"
+            element={<FicheLogement />}
+          />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>

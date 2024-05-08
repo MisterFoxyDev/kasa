@@ -1,14 +1,20 @@
 import { useParams } from "react-router-dom";
 import "./fiche-logement.scss";
-
+import DetailedCard from "../../organisms/detailedCard/DetailedCard";
+import { useEffect } from "react";
 
 const FicheLogement = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-const { idLogement } = useParams(); 
+  const { idLogement } = useParams();
 
-  return ( <div>
-<p>Logement : {idLogement}</p>
-</div>
-)};
+  return (
+    <div>
+      <DetailedCard idLogement={idLogement} />
+    </div>
+  );
+};
 
 export default FicheLogement;

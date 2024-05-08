@@ -1,0 +1,35 @@
+.detailed-card-image {
+  position: relative;
+  margin-top: 5%;
+  width: 100%;
+  height: 45vh;
+
+  .current-gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .gallery-arrow-left {
+    border: solid 1px red;
+    position: absolute;
+    left: 1%;
+    top: 40%;
+    cursor: pointer;
+    border: none;
+    width: 47px;
+    height: 79px;
+  }
+
+  .gallery-arrow-right {
+    border: solid 1px red;
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    cursor: pointer;
+    border: none;
+    width: 47px;
+    height: 79px;
+  }
+}
