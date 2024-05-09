@@ -1,0 +1,22 @@
+.single-quality {
+  position: relative;
+  background-color: #ff6060;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-radius: 5px;
+
+  img {
+    position: absolute;
+    cursor: pointer;
+    right: 2%;
+    top: 40%;
+  }
+}
+
+.dropdown__content {
+  background: #f6f6f673;
+  font-weight: 400;
+  padding: 1%;
+}
