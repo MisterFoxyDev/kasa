@@ -6,11 +6,14 @@
   margin-top: 1rem;
 
   .tag__container {
+    display: flex;
+    justify-content: center;
     color: white;
-    padding: 5px;
+    min-width: 115px;
+    padding: 5px 8px;
     margin-right: 1rem;
     margin-bottom: 1rem;
     background-color: #ff6060;
-    border-radius: 5px;
+    border-radius: 10px;
   }
 }

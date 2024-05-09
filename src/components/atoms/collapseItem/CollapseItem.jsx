@@ -8,6 +8,20 @@ const CollapseItem = ({ title, content }) => {
     setIsOpen(!isOpen);
   };
 
+  const renderContent = () => {
+    if (Array.isArray(content)) {
+      return (
+        <ul>
+          {content.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
+      );
+    } else {
+      return content;
+    }
+  };
+
   return (
     <div>
       <div className="dropdown__title">
@@ -20,7 +34,7 @@ const CollapseItem = ({ title, content }) => {
         />
       </div>
       <div className={`dropdown__content ${isOpen ? "open" : ""}`}>
-        {content}
+        {renderContent()}
       </div>
     </div>
   );

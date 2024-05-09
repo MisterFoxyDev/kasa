@@ -1,0 +1,11 @@
+.stars__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  .star__img {
+    width: 1.54rem;
+    height: 1.5rem;
+  }
+}

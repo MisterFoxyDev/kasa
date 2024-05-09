@@ -10,7 +10,7 @@
   img {
     position: absolute;
     cursor: pointer;
-    right: 2%;
+    right: 3%;
     top: 40%;
     transition: transform 0.3s ease-in-out;
   }
@@ -23,16 +23,28 @@
 .dropdown__content {
   background: #f6f6f673;
   font-weight: 400;
-  padding: 1%;
+  line-height: 1.4;
+  padding: 2%;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition:
-    max-height 0.3s ease-in-out,
-    opacity 0.5s;
+  transition: max-height 0.4s;
+
+  ul {
+    list-style-type: none;
+    padding-left: 2%;
+
+    li {
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+  }
 }
 
 .dropdown__content.open {
-  max-height: 500px;
+  max-height: 180px;
+  overflow-y: auto;
   opacity: 1;
+  color: black;
+  margin-bottom: 10px;
 }

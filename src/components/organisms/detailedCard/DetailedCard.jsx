@@ -4,7 +4,7 @@ import DetailedCardDescription from "../../molecules/detailedCardDescription/Det
 
 const DetailedCard = ({ idLogement }) => {
   return (
-    <div className="detailed-card-container">
+    <div className="detailed-card__container">
       <DetailedCardImage idLogement={idLogement} />
       <DetailedCardDescription idLogement={idLogement} />
     </div>
