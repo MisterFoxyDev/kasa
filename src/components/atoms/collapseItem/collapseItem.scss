@@ -1,4 +1,4 @@
-.single-quality {
+.dropdown__title {
   position: relative;
   background-color: #ff6060;
   color: white;
@@ -12,6 +12,11 @@
     cursor: pointer;
     right: 2%;
     top: 40%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  img.arrow-down {
+    transform: rotate(-180deg);
   }
 }
 
@@ -19,4 +24,15 @@
   background: #f6f6f673;
   font-weight: 400;
   padding: 1%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.3s ease-in-out,
+    opacity 0.5s;
+}
+
+.dropdown__content.open {
+  max-height: 500px;
+  opacity: 1;
 }

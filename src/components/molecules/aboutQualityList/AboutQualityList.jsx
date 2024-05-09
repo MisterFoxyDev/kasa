@@ -1,14 +1,14 @@
-import AboutQualityDropdown from "../../atoms/aboutQualityDropdown/AboutQualityDropdown";
 import "./aboutQualityList.scss";
 import qualities from "../../../assets/valeurs/valeurs.json";
+import CollapseItem from "../../atoms/collapseItem/CollapseItem";
 
 const AboutQualityList = () => {
   return (
     <div className="quality-list__container">
       {qualities.map((quality, index) => (
-        <AboutQualityDropdown
+        <CollapseItem
           key={`${quality.name}-${index}`}
-          quality={quality.name}
+          title={quality.name}
           content={quality.content}
         />
       ))}
