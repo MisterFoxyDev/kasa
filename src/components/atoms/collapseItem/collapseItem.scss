@@ -28,7 +28,7 @@
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: max-height 0.4s;
+  transform-origin: top center;
 
   ul {
     list-style-type: none;
@@ -42,9 +42,22 @@
 }
 
 .dropdown__content.open {
-  max-height: 180px;
+  max-height: 1000px;
   overflow-y: auto;
   opacity: 1;
   color: black;
   margin-bottom: 10px;
+  animation: growDown 0.3s ease-in-out forwards;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }

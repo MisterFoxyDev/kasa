@@ -40,3 +40,5 @@ root.render(
     <Footer />
   </React.StrictMode>
 );
+
+// ajouter couleur principale au SASS ($) + responsive
