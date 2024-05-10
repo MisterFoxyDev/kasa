@@ -27,7 +27,6 @@
   padding: 2%;
   max-height: 0;
   opacity: 0;
-  overflow: hidden;
   transform-origin: top center;
 
   ul {
@@ -42,12 +41,11 @@
 }
 
 .dropdown__content.open {
-  max-height: 1000px;
+  max-height: 12.5rem;
   overflow-y: auto;
   opacity: 1;
   color: black;
-  margin-bottom: 10px;
-  animation: growDown 0.3s ease-in-out forwards;
+  animation: growDown 0.3s;
 }
 
 @keyframes growDown {
