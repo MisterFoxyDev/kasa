@@ -31,19 +31,19 @@
     max-width: 9.0625rem;
     max-height: 2.93rem;
   }
+  .navlink {
+    margin: 0.9rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
   .banner-nav {
-    flex-shrink: 1;
+    justify-content: center;
   }
   .navlink {
-    margin-left: 2.5rem;
-    font-size: 1.2rem;
-  }
-
-  @media (max-width: 509px) {
-    .navlink {
-      margin: 1rem;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-    }
+    margin-left: 1.5rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
   }
 }

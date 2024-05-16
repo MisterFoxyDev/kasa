@@ -1,12 +1,17 @@
 .equipements-dropdown__container {
-  color: white;
-  width: 33%;
-  height: 50px;
-  background-color: #ff6060;
-  border-radius: 5px;
-
+  width: 40%;
   p {
     margin-left: 10px;
     font-weight: 700;
+  }
+}
+
+@media (max-width: 768px) {
+  .equipements-dropdown__container {
+    width: 100%;
+    p {
+      margin-left: 10px;
+      font-weight: 700;
+    }
   }
 }

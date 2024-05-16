@@ -1,7 +1,6 @@
 .tag-list__container {
   display: flex;
   justify-content: flex-start;
-  max-width: 50%;
   flex-wrap: wrap;
   margin-top: 1rem;
 
@@ -12,8 +11,22 @@
     min-width: 115px;
     padding: 5px 8px;
     margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.5rem;
     background-color: #ff6060;
     border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tag-list__container {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5%;
+    .tag__container {
+      font-size: 0.625rem;
+      min-width: 50px;
+      padding: 3px 8px;
+      margin: 2px;
+    }
   }
 }

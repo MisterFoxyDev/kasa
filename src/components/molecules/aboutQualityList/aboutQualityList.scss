@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 80%;
+  // height: 25vh;
   margin: 3% auto;
   justify-content: space-between;
 }
 
-@media (max-width: 509px) {
+@media (max-width: 480px) {
   .quality-list__container {
     width: 100%;
   }

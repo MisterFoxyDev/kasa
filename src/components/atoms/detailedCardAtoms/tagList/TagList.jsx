@@ -2,7 +2,7 @@ import "./tagList.scss";
 
 const logements = require("../../../../assets/logements/logements.json");
 
-const TagLList = ({ idLogement }) => {
+const TagList = ({ idLogement }) => {
   const tags = logements.find((logement) => logement.id === idLogement).tags;
 
   return (
@@ -16,4 +16,4 @@ const TagLList = ({ idLogement }) => {
   );
 };
 
-export default TagLList;
+export default TagList;

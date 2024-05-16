@@ -1,11 +1,22 @@
 .detailed-card__infos-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   margin-bottom: 1rem;
+  min-height: 14vh;
 }
 
 .dropdown-menues {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .detailed-card__infos-container {
+    margin-bottom: 0.5rem;
+    flex-direction: column;
+  }
+  .dropdown-menues {
+    display: flex;
+    flex-direction: column;
+  }
 }

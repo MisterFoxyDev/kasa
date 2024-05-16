@@ -7,7 +7,7 @@ import "./detailedCardDescription.scss";
 
 const detailedCardDescription = ({ idLogement }) => {
   return (
-    <div>
+    <div className="detailed-card__container">
       <section className="detailed-card__infos-container">
         <DetailedCardInfo1 idLogement={idLogement} />
         <DetailedCardInfo2 idLogement={idLogement} />
