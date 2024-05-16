@@ -15,11 +15,13 @@ body {
   margin: 2% 10%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   min-height: 100vh;
 }
 
 @media (max-width: 430px) {
   .site-container {
     margin: 0.5rem;
+    justify-content: space-between;
   }
 }
