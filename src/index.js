@@ -38,7 +38,7 @@ root.render(
       </Router>
     </div>
     <Footer />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // ajouter couleur principale au SASS ($) + responsive

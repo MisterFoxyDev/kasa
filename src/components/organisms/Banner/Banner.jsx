@@ -7,8 +7,12 @@ const Banner = () => {
     <div className="banner-container">
       <img className="banner-logo" src={bannerImage} alt="logo kasa" />
       <div className="banner-nav">
-        <Link className="navlink" to="/">Accueil</Link>
-        <Link className="navlink" to="/about">A Propos</Link>
+        <Link className="navlink" to="/">
+          Accueil
+        </Link>
+        <Link className="navlink" to="/about">
+          A Propos
+        </Link>
       </div>
     </div>
   );

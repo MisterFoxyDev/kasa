@@ -3,3 +3,9 @@
   margin: 3rem auto;
   width: 100%;
 }
+
+@media (max-width: 430px) {
+  .home {
+    margin: 0.5rem;
+  }
+}

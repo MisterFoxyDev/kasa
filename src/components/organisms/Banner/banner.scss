@@ -1,13 +1,21 @@
 .banner-container {
   position: relative;
   display: flex;
+  flex-shrink: 1;
   justify-content: space-between;
+}
+
+.banner-logo {
+  width: 13.145rem;
+  height: 4.25rem;
+  background-image: url("../../../assets/images/banner-logo.png");
+  background-size: cover;
 }
 
 .banner-nav {
   display: flex;
   align-items: center;
-  justify-items: space-between;
+  justify-content: space-between;
 }
 
 .navlink {
@@ -15,4 +23,26 @@
   margin-left: 5rem;
   font-size: 1.5rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .banner-logo {
+    max-width: 9.0625rem;
+    max-height: 2.93rem;
+  }
+  .banner-nav {
+    flex-shrink: 1;
+  }
+  .navlink {
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 509px) {
+    .navlink {
+      margin: 1rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+  }
 }

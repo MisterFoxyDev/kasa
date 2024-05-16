@@ -7,3 +7,12 @@
   position: relative;
 }
 
+@media (max-width: 500px) {
+  .card {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 16rem;
+  margin-bottom: 1rem;
+}
+}
