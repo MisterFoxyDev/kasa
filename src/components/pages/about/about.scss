@@ -1,5 +1,11 @@
 .about {
-    min-height: 100vh;
-    margin: 3rem auto;
+   flex-grow: 1;
+    min-height: 50vh;
     width: 100%;
+  }
+
+  @media (max-width: 509px) {
+    .about {
+      min-height: 50vh;
+    }
   }

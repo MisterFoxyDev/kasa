@@ -23,7 +23,7 @@ const CollapseItem = ({ title, content }) => {
   };
 
   return (
-    <div>
+    <div className="dropdown__container">
       <div className="dropdown__title">
         {title}
         <img

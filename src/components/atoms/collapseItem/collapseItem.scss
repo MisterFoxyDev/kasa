@@ -1,3 +1,5 @@
+
+
 .dropdown__title {
   position: relative;
   background-color: #ff6060;
@@ -28,6 +30,9 @@
   max-height: 0;
   opacity: 0;
   transform-origin: top center;
+  transform-origin: top center;
+  transition: max-height 0.3s ease-in-out; 
+  overflow: hidden;
 
   ul {
     list-style-type: none;
@@ -41,7 +46,7 @@
 }
 
 .dropdown__content.open {
-  max-height: 12.5rem;
+  max-height: 100vh;
   overflow-y: auto;
   opacity: 1;
   color: black;
@@ -57,5 +62,24 @@
   }
   100% {
     transform: scaleY(1);
+  }
+}
+
+@media (max-width: 509px) {
+  .dropdown__container {
+    max-height: 100vh;
+  }
+  .dropdown__title {
+    font-size: 0.8125rem;
+    padding: 0.5rem;
+
+    img {
+      right: 3%;
+      top: 28%;
+    }
+  }
+  .dropdown__content {
+    font-size: 0.8rem;
+    overflow-y: auto;
   }
 }
