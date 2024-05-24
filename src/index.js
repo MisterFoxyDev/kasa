@@ -41,4 +41,4 @@ root.render(
   </React.StrictMode>,
 );
 
-// ajouter couleur principale au SASS ($) + responsive
+// ajouter couleur principale au SASS ($)
