@@ -3,12 +3,9 @@
 }
 
 .footer-img {
-  position: relative;
-  object-fit: cover;
   height: 13rem;
-  width: 99vw;
   background: #000000 url("../../../assets/images/footer.png") no-repeat center center; 
-  background-size: cover; 
+  background-size: contain; 
   margin: 0;
 }
 
