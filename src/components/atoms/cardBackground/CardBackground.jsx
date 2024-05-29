@@ -1,9 +1,9 @@
-import "./cardBackground.scss"
+import "./cardBackground.scss";
 
 const CardBackground = ({ cover }) => {
-  return ( <div>
-<img className="card-background" src={cover} alt="" />
-</div>
-)};
+  return (
+    <div className="card-background" style={{ backgroundImage: `url(${cover})` }}></div>
+  );
+};
 
 export default CardBackground;

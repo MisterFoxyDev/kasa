@@ -1,9 +1,23 @@
 .card-background {
+  position: relative;
   box-sizing: border-box;
   width: 21.25rem;
   height: 21.25rem;
   border-radius: 10px;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    border-radius: inherit;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 480px) {
