@@ -8,6 +8,7 @@ const FicheLogement = () => {
   const { idLogement } = useParams();
   const navigate = useNavigate();
   const logement = logements.find((logement) => logement.id === idLogement);
+  //Pas de logique dans le global
 
   useEffect(() => {
     window.scrollTo(0, 0);

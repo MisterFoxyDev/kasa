@@ -11,8 +11,6 @@ import bodyHomeBanner from "./assets/images/body-home-banner-1920.webp";
 import FicheLogement from "./components/pages/fiche-logement/FicheLogement";
 import Error from "./components/pages/error/Error";
 
-const homeContent = "Chez vous, partout et ailleurs";
-const aboutContent = "";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,11 +21,11 @@ root.render(
         <Routes>
           <Route
             path="/"
-            element={<Home banner={bodyHomeBanner} content={homeContent} />}
+            element={<Home banner={bodyHomeBanner} />}
           />
           <Route
             path="/about"
-            element={<About banner={bodyAboutBanner} content={aboutContent} />}
+            element={<About banner={bodyAboutBanner} />}
           />
           <Route
             path="/fiche-logement/:idLogement"
