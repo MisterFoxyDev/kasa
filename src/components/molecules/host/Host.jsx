@@ -2,11 +2,11 @@ import HostName from "../../atoms/detailedCardAtoms/hostName/HostName";
 import HostThumbnail from "../../atoms/detailedCardAtoms/hostThumbnail/HostThumbnail";
 import "./host.scss";
 
-const Host = ({ idLogement }) => {
+const Host = ({ logement }) => {
   return (
     <div className="host__container">
-      <HostName idLogement={idLogement} />
-      <HostThumbnail idLogement={idLogement} />
+      <HostName logement={logement} />
+      <HostThumbnail logement={logement} />
     </div>
   );
 };

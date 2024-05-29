@@ -1,0 +1,21 @@
+.description__title {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+.area-location {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .description__title {
+    font-size: 1.125rem;
+    width: 90vw;
+    flex-wrap: wrap;
+  }
+  .area-location {
+    font-size: 0.875rem;
+  }
+}

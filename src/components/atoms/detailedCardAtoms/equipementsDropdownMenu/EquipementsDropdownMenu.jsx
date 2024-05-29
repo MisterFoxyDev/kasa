@@ -1,9 +1,8 @@
 import "./equipementsDropdownMenu.scss";
 import CollapseItem from "../../../atoms/collapseItem/CollapseItem";
-import logements from "../../../../assets/logements/logements.json"
 
-const EquipementsDropdownMenu = ({ idLogement }) => {
-  const logement = logements.find((logement) => logement.id === idLogement);
+
+const EquipementsDropdownMenu = ({ logement }) => {
 
   return (
     <div className="equipements-dropdown__container">

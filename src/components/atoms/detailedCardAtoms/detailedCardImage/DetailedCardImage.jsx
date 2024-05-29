@@ -1,12 +1,11 @@
 import { useState } from "react";
-import logements from "../../../../assets/logements/logements.json";
 import leftArrow from "../../../../assets/images/leftArrow.png";
 import rightArrow from "../../../../assets/images/rightArrow.png";
 import "./detailedCardImage.scss";
 
-const DetailedCardImage = ({ idLogement }) => {
+const DetailedCardImage = ({ logement }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const logement = logements.find((logement) => logement.id === idLogement);
+
 
   const handleNext = () => {
     setCurrentImageIndex(

@@ -1,8 +1,7 @@
 import "./hostThumbnail.scss";
-import logements from "../../../../assets/logements/logements.json";
 
-const hostThumbnail = ({ idLogement }) => {
-  const logement = logements.find((logement) => logement.id === idLogement);
+const hostThumbnail = ({ logement }) => {
+
   return (
     <div>
       <img className="host__thumbnail" src={logement.host.picture} alt="Propriétaire" />

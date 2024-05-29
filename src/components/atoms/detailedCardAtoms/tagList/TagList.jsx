@@ -1,9 +1,7 @@
 import "./tagList.scss";
 
-const logements = require("../../../../assets/logements/logements.json");
-
-const TagList = ({ idLogement }) => {
-  const tags = logements.find((logement) => logement.id === idLogement).tags;
+const TagList = ({ logement }) => {
+  const tags = logement.tags;
 
   return (
     <div className="tag-list__container">

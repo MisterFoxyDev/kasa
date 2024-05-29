@@ -1,13 +1,15 @@
-import AreaLocation from "../../atoms/detailedCardAtoms/areaLocation/AreaLocation";
-import Description from "../../atoms/detailedCardAtoms/description/Description";
 import "./location.scss";
 
-const Location = ({ idLogement }) => {
+const Location = ({ logement }) => {
   return (
+    <>
     <div>
-      <Description idLogement={idLogement} />
-      <AreaLocation idLogement={idLogement} />
+      <div className="description__title">{logement.title}</div>
     </div>
+    <div className="area-location">
+    {logement.location}
+  </div>
+  </>
   );
 };
 
