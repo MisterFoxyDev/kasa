@@ -6,14 +6,15 @@ import logements from "../../../assets/logements/logements.json";
 import DetailedCardImage from "../../atoms/detailedCardAtoms/detailedCardImage/DetailedCardImage";
 import DetailedCardDescription from "../../molecules/detailedCardDescription/DetailedCardDescription";
 
+const logementsById = logements.reduce((obj, logement) => {
+  obj[logement.id] = logement;
+  return obj;
+}, {});
+
 const FicheLogement = () => {
   const { idLogement } = useParams();
   const navigate = useNavigate();
 
-  const logementsById = logements.reduce((obj, logement) => {
-    obj[logement.id] = logement;
-    return obj;
-  }, {});
   const logement = logementsById[idLogement];
 
   useEffect(() => {
