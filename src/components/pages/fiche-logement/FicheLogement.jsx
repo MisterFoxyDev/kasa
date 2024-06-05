@@ -1,37 +1,29 @@
 import { useNavigate, useParams } from "react-router-dom";
 import "./fiche-logement.scss";
 import DetailedCard from "../../organisms/detailedCard/DetailedCard";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import logements from "../../../assets/logements/logements.json";
 import DetailedCardImage from "../../atoms/detailedCardAtoms/detailedCardImage/DetailedCardImage";
 import DetailedCardDescription from "../../molecules/detailedCardDescription/DetailedCardDescription";
-
-const logementsById = logements.reduce((obj, logement) => {
-  obj[logement.id] = logement;
-  return obj;
-}, {});
 
 const FicheLogement = () => {
   const { idLogement } = useParams();
   const navigate = useNavigate();
 
-  const logement = logementsById[idLogement];
+  const [logement, setLogement] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
-
-  useEffect(() => {
-    if (!logement) {
+    const currentLogement = logements.find((lg) => lg.id === idLogement);
+    if (!currentLogement) {
       navigate("/error");
     }
-  }, [logement, navigate]);
+    setLogement(currentLogement);
+  }, [idLogement, navigate]);
 
-  if (!logement) {
-    return null;
-  }
-
-  return (
+  return logement === null ? (
+    <p>Loading</p>
+  ) : (
     <DetailedCard>
       <DetailedCardImage logement={logement} />
       <DetailedCardDescription logement={logement} />
