@@ -4,6 +4,18 @@
   height: 45vh;
   margin-bottom: 2%;
 
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+    border-radius: inherit;
+    z-index: 1;
+  }
+
   &.loading {
     cursor: wait;
 
@@ -28,6 +40,7 @@
     height: 5rem;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 3;
   }
 
   .gallery__arrow-left {
@@ -37,6 +50,15 @@
   .gallery__arrow-right {
     right: 1%;
   }
+}
+
+.numerotation {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  color: white;
+  z-index: 2;
+  cursor: default;
 }
 
 @media (max-width: 768px) {
