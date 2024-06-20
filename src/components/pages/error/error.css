@@ -1,0 +1,48 @@
+.error-message {
+  color: #ff6060;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 0;
+}
+.error-message h1 {
+  font-size: 18rem;
+  font-weight: 700;
+  margin: 2rem auto;
+}
+.error-message h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin: 3rem auto;
+  margin-bottom: 10rem;
+}
+.error-message a {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .error-message h1 {
+    font-size: 10rem;
+  }
+  .error-message h2 {
+    font-size: 1.5rem;
+  }
+  .error-message a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 480px) {
+  .error-message {
+    height: 80vh;
+  }
+  .error-message h1 {
+    font-size: 6rem;
+  }
+  .error-message h2 {
+    font-size: 1.125rem;
+  }
+  .error-message a {
+    font-size: 0.875rem;
+  }
+}/*# sourceMappingURL=error.css.map */

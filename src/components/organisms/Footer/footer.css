@@ -1,15 +1,16 @@
 .footer-container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .footer-img {
-  position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: 13rem;
-  width: 100vw;
-  background: #000000;
+  background: #000000 url("../../../assets/images/footer.png") no-repeat center center;
+  background-size: contain;
   margin: 0;
+}
+
+@media (max-width: 480px) {
+  .footer-img {
+    background-image: url("../../../assets/images/footer2.png");
+  }
 }/*# sourceMappingURL=footer.css.map */

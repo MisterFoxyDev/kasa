@@ -1,0 +1,12 @@
+.host__thumbnail {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  .host__thumbnail {
+    width: 32px;
+    height: 32px;
+  }
+}/*# sourceMappingURL=hostThumbnail.css.map */

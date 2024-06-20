@@ -1,5 +1,11 @@
 .home {
   min-height: 100vh;
-  margin: 3rem auto;
+  margin: auto;
   width: 100%;
-}/*# sourceMappingURL=Home.css.map */
+}
+
+@media (max-width: 480px) {
+  .home {
+    margin: 0.5rem;
+  }
+}/*# sourceMappingURL=home.css.map */

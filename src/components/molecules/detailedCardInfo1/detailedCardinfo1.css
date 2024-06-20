@@ -1,0 +1,12 @@
+.info-1__container {
+  display: flex;
+  flex: 1 1 70%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .info-1__container {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=detailedCardinfo1.css.map */

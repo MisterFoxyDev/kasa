@@ -1,0 +1,21 @@
+.stars__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.stars__container .star__img {
+  width: 1.54rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .stars__container {
+    gap: 5px;
+    margin-bottom: 5%;
+  }
+  .stars__container .star__img {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+}/*# sourceMappingURL=rating.css.map */

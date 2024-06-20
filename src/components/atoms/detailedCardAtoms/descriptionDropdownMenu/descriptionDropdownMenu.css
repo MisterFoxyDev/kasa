@@ -1,0 +1,17 @@
+.description-dropdown__container {
+  width: 40%;
+}
+.description-dropdown__container p {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .description-dropdown__container {
+    width: 100%;
+  }
+  .description-dropdown__container p {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=descriptionDropdownMenu.css.map */

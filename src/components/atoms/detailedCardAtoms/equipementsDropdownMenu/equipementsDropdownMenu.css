@@ -1,0 +1,17 @@
+.equipements-dropdown__container {
+  width: 40%;
+}
+.equipements-dropdown__container p {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .equipements-dropdown__container {
+    width: 100%;
+  }
+  .equipements-dropdown__container p {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=equipementsDropdownMenu.css.map */
